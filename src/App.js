@@ -6,7 +6,7 @@ import { nanoid } from "nanoid";
 
 function App() {
   const jobListing = data.map((company) => {
-    return <JobContainer key={nanoid} job={company} />;
+    return <JobContainer key={nanoid()} job={company} />;
   });
   return (
     <div className="App">
