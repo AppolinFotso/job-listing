@@ -18,16 +18,19 @@ function JobContainer(props) {
         <div className="company-info">
           <p>
             <span>{props.job.company}</span>
-            <span className="new">{props.job.new ? "NEW!" : null}</span>
-            <span className="featured">
+            <span className={props.job.new === true ? "new" : "none"}>
+              {props.job.new ? "NEW!" : null}
+            </span>
+            <span className={props.job.featured === true ? "featured" : "none"}>
               {props.job.featured ? "FEATURED" : null}
             </span>
           </p>
-          <p>{props.job.position}</p>
+          <h3>{props.job.position}</h3>
           <p>
-            <span>{props.job.postedAt} </span>.
-            <span> {props.job.contract} </span>.
-            <span> {props.job.location}</span>
+            {props.job.postedAt} <span>.</span>
+            {props.job.contract}
+            <span>.</span>
+            {props.job.location}
           </p>
         </div>
       </div>

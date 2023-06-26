@@ -35,3 +35,61 @@
     transform: rotate(360deg);
   }
 }
+
+.job-listing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 0;
+  background-color: hsl(180, 31%, 95%);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 60vw;
+  box-shadow: 4px 4px 3px hsl(180, 29%, 50%);
+}
+.left,
+.right {
+  display: flex;
+  gap: 1em;
+  padding: 1.5em;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.left .new,
+.featured {
+  margin-left: 1em;
+  padding: 0.3em;
+  border-radius: 1em;
+}
+.left p:nth-child(1) span:nth-child(1) {
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+}
+.left .new {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+}
+.left .featured {
+  color: white;
+  background-color: black;
+}
+.company-info p {
+  color: hsl(180, 8%, 52%);
+}
+
+.company-info p:nth-child(3) span {
+  padding: 0 0.5em;
+}
+
+.right h3 {
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  padding: 0.5em;
+}
